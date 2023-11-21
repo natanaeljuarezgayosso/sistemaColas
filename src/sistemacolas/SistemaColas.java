@@ -1,20 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package sistemacolas;
+mport javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-/**
- *
- * @author natan
- */
-public class SistemaColas {
+public class SistemaDeColas extends JFrame {
+    private JTextField landa;
+    private JTextField miu;
+    private JTextField unidadmedida;
+    private JTextArea resultados;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+    public SistemaDeColas() {
+        setTitle("Sistema de Colas - Interfaz Gráfica");
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        landa = new JTextField();
+        miu = new JTextField();
+        unidadmedida = new JTextField();
+        JButton calcularButton = new JButton("Calcular");
+        resultados = new JTextArea();
+        resultados.setEditable(false);
