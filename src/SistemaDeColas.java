@@ -73,4 +73,3 @@ public class SistemaDeColas extends JFrame {
         });
     }
 }
-
